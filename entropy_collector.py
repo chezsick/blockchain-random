@@ -78,6 +78,7 @@ class HashCollectorDaemon(multiprocessing.Process):
         entropy in the spare cache, lean on Python's random.SystemRandom to get
         some entropy.
         """
+        stderr.write("WARNING: Using /dev/urandom.")
         try:
             for byte in (self._sysrandom.randint(0, 256) for i in range(8)):
                 self._spare_queue.put_nowait(byte)
