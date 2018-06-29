@@ -8,7 +8,7 @@ from math_utils import murmur3_32, _rshift
 
 _queue = multiprocessing.Queue(5000)
 _spare_queue = multiprocessing.Queue(5000)
-_url = "http://blockchain.info/unconfirmed-transactions?format=json"
+_url = "https://blockchain.info/unconfirmed-transactions?format=json"
 _sysrandom = SystemRandom()
 
 stream_entropy_daemon = HashCollectorDaemon(
