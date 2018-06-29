@@ -82,7 +82,7 @@ False
 
 ### How it works ###
 
-Unconfirmed transaction hashes are queried from [blockchain.info](https://blockchain.info). If we need to recycle previous entropy, we use a 32-bit MurmurHash3 function.
+Unconfirmed transaction hashes are queried from [blockchain.com](https://blockchain.com). If we need to recycle previous entropy, we use a 32-bit MurmurHash3 function.
 
 How well does this work? Well, here's 1MB of truly random bytes from unconfirmed transactions:
 
